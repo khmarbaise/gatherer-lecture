@@ -5,7 +5,6 @@ import java.time.Instant;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.HashSet;
-import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 import java.util.function.Function;
@@ -117,13 +116,9 @@ public record Countdown(List<Integer> ints, int target) {
   record Number(int value) implements Element {
   }
 
-  record Elements(List<Element> elements) implements Iterable<Element> {
+  record Elements(List<Element> elements) {
 
     private static Set<Elements> allElements;
-
-    public Iterator<Element> iterator() {
-      return elements.iterator();
-    }
 
     public int size() {
       return this.elements.size();
