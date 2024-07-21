@@ -41,4 +41,4 @@ Preparation for Gatherer Lecture
 * https://openjdk.org/projects/jdk/23/[Open JDK 23]
 ** https://openjdk.org/jeps/473[Stream Gatherer - JEP 473 (Second Preview)]
 * LSP
-  * https://stackoverflow.com/questions/2723397/what-is-pecs-producer-extends-consumer-super
+** https://stackoverflow.com/questions/2723397/what-is-pecs-producer-extends-consumer-super
