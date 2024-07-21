@@ -1,5 +1,6 @@
 package com.soebes.gatherer.lecture;
 
+import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
@@ -11,6 +12,8 @@ import java.util.function.Supplier;
 import java.util.stream.Collectors;
 import java.util.stream.Gatherer;
 import java.util.stream.Stream;
+
+import static org.assertj.core.api.Assertions.assertThat;
 
 class DistinctByTest {
 
@@ -24,8 +27,10 @@ class DistinctByTest {
   @Test
   void exampleDistinctWithNumbers() {
     var integers = List.of(1, 10, 11, 10, 11);
+
     var result = integers.stream().distinct().toList();
-    System.out.println("result = " + result);
+
+    assertThat(result).containsExactly(1, 10, 11);
   }
 
   @Test
