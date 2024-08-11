@@ -16,8 +16,6 @@
 //   specific language governing permissions and limitations
 //   under the License.
 //
-:quality-heads-up: https://inside.java/2023/07/29/quality-heads-up/
-:mockito-site: https://github.com/mockito/mockito
 = Gatherer Lecture
 
 Just a try.
