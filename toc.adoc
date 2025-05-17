@@ -1,0 +1,43 @@
+= Overview
+
+* collect(..)
+** Collector (intermediate collectors) like Collections.groupingBy(...)
+
+== Examples
+
+=== Starting Example (map)
+Hint: Not Stateful!
+Experiment: Think `.map(..)` does not exist!
+Implement it with `Gatherer`.
+
+[source,java]
+----
+<T, R> Gatherer<T, ?, R> map(Function<? super T, ? extends R> mapper) {
+  Gatherer.Integrator<Void, T, R> integrator = (_, element, downstream) ->
+    downstream.push(mapper.apply(element));
+  return Gatherer.of(integrator);
+}
+----
+
+=== Starting Example (limit/skip)
+Hint: Stateful!!! Sequential
+Experiment: Think `.limit(..)` does not exist!
+Implement it with `Gatherer`.
+
+[source,java]
+----
+<T, T> Gatherer<T, ?, T> limit(long maxSize) {
+  class Count {
+    long left = maxSize;
+    boolean integrate(T element, Gatherer.Downstream<? super T> downstream){
+      if (left > 0) {
+        left--;
+        return downstream.push(element);
+      } else {
+        return false;
+      }
+    }
+  }
+  return Gatherer.<T, Count, T> ofSequential(Count::new, Count::integrate);
+}
+----

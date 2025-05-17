@@ -1,0 +1,118 @@
+// Licensed to the Apache Software Foundation (ASF) under one
+// or more contributor license agreements. See the NOTICE file
+// distributed with this work for additional information
+// regarding copyright ownership. The ASF licenses this file
+// to you under the Apache License, Version 2.0 (the
+// "License"); you may not use this file except in compliance
+// with the License. You may obtain a copy of the License at
+//
+//   http://www.apache.org/licenses/LICENSE-2.0
+//
+//   Unless required by applicable law or agreed to in writing,
+//   software distributed under the License is distributed on an
+//   "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+//   KIND, either express or implied. See the License for the
+//   specific language governing permissions and limitations
+//   under the License.
+//
+= Gatherer Lecture
+
+For different Lectures
+
+for Example:
+
+* Java User Group Saarbrücken
+** Stream Gatherers: Effiziente Stream-Verarbeitung in JDK 24 - Karl Heinz Marbaise
+* JCon Europe 2025
+** https://schedule.jcon.one/?day=2025-05-13&selectedSession=783537
+
+
+== State
+
+Used in lectures
+
+== Requirements
+
+* Maven 3.9+
+* JDK24+
+
+== References
+
+Finalized for JDK 24:
+
+* https://openjdk.org/jeps/485
+
+* https://openjdk.org/projects/jdk/22/[Open JDK 22]
+** https://openjdk.org/jeps/461[Stream Gatherer - JEP 461]
+* https://openjdk.org/projects/jdk/23/[Open JDK 23]
+** https://openjdk.org/jeps/473[Stream Gatherer - JEP 473 (Second Preview)]
+* https://www.happycoders.eu/java/stream-gatherers/ (Check for details)
+* https://stackoverflow.com/questions/18552005/is-there-a-concise-way-to-iterate-over-a-stream-with-indices-in-java-8
+* LSP
+** https://stackoverflow.com/questions/2723397/what-is-pecs-producer-extends-consumer-super
+* https://medium.com/@tecnicorabi/mastering-java-collectors-the-ultimate-guide-to-efficient-data-handling-with-streams-2a5530d3ba11
+* https://github.com/tginsberg/gatherers4j (check this!)
+* https://www.unlogged.io/post/jdk-23-what-to-expect
+* https://medium.com/@yassir.acaf/demystifying-java-collectors-5bfb8d4378d2
+* https://people.cs.nott.ac.uk/pszgmh/fold.pdf
+* https://medium.com/javarevisited/whats-new-with-java-23-698762aa44d1
+
+Example to use it as gatherer:
+
+* https://medium.com/@kamal81094/understanding-streams-api-in-java-8-using-employee-dataset-3935760e5c76
+
+Can we create an example out of this Python part for ZIP:
+
+* https://medium.com/python-in-plain-english/python-zip-and-when-to-use-it-2f863d9d73b7
+
+* Recheck example:
+* https://medium.com/gitconnected/18-programming-concepts-youve-never-heard-of-but-should-071df50e2790
+
+
+* Reference
+* https://en.wikipedia.org/wiki/Kahan_summation_algorithm
+
+* https://horstmann.com/unblog/2024-10-01/index.html
+
+* Zipping
+** https://www.morling.dev/blog/zipping-gatherer/ (You should look into it)
+** https://github.com/JosePaumard/more-spliterators/blob/master/src/main/java/org/paumard/spliterators/ZippingSpliterator.java
+
+* Existing Libs (!!)
+** https://github.com/jhspetersson/packrat
+** https://github.com/tginsberg/gatherers4j
+
+* Reread that article very good explanations of Streams
+** https://medium.com/@dip-mazumder/java-stream-api-cdf75a49a181
+
+* Nochmal anschauen:
+** https://jugsaxony.org/downloads/day/slides/JSD2024_Michael-Wiedeking_Zusammengerafft.pdf
+* https://blog.payara.fish/introducing-stream-gatherers-jep-461-for-enhanced-java-stream-operations
+* https://cr.openjdk.org/~vklang/Gatherers.html
+
+* Arrays are objects
+** https://docs.oracle.com/javase/specs/jls/se21/html/jls-10.html
+
+* DropWhile/Takewhile
+** https://dzone.com/articles/exploring-takewhile-and-dropwhile-in-java
+
+* JEP Café
+** https://www.youtube.com/watch?v=jqUhObgDd5Q
+
+* Good Article
+** https://www.happycoders.eu/java/stream-gatherers/
+
+* Functional Lambda Calculus
+** https://fpilluminated.org/
+
+* Very informative
+** https://daniel.avery.io/writing/the-java-streams-parallel
+
+* Another information about Stream API good information
+** https://sbolligorla.wordpress.com/stream-api/
+
+* Article about algebraic types
+** https://blog.scottlogic.com/2025/01/20/algebraic-data-types-with-java.html
+
+
+* https://github.com/dpaukov/combinatoricslib3/tree/master?tab=readme-ov-file#3-simple-permutations
